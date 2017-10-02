@@ -1,0 +1,185 @@
+ 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.insta img {
+  display: block;
+  margin: 0 auto;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #574c4c;
+}
+
+#navbar-example2{
+    font-family: Raleway, sans-serif;
+	font-size: 20px;
+}
+
+ .footer {
+   border-top: 2px solid #DDD;
+     padding: 5px;
+ }
+
+a:link {
+    color: #574c4c;
+}
+
+a:hover {
+    color: #c998c0;
+}
+
+#content{
+     background-color: #fff;
+}
+
+#hero {
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+#hero-mobile{
+    display: none;
+	background: url("https://image.ibb.co/emvWB5/mobile_01.png") no-repeat center bottom / cover;
+	height: 500px;
+}
+
+
+.layer {
+  background-position: bottom center;
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  position: fixed;
+  z-index: -1;
+}
+
+#hero, .layer {
+  min-height: 600px;
+}
+
+.layer-1 {
+  background-image: url(https://image.ibb.co/fDumuQ/finalclouds_01.png);
+    background-position: top;
+}
+
+
+.layer-2 {
+  background-image: url(https://image.ibb.co/cbs0M5/fade_01.png);
+    background-position: top;
+}
+
+.layer-3 {
+   background-image: url(https://image.ibb.co/b03wuQ/finaltrees_01.png);
+    background-position: top;
+} 
+
+.layer-4 {
+   background-image: url(https://image.ibb.co/dUcfG5/layer4_01_8_36_52_PM.png);
+   background-position: top;
+} 
+
+.timeline{
+     padding: 30px;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 7px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #574c4c;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 300px;
+  padding: 15px;
+  background: #aadae4;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 35px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #aadae4 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -339px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #aadae4;
+}
+
+
+@media only screen and (max-width: 768px) {
+	#hero {
+		display: none;
+	}
+	#hero-mobile {
+		display: block;
+	}
+    
+    .timeline{
+        display: none;
+    }
+    
+
+  
+}
+
+
+
+/*
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+*/
+
